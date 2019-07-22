@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:background="#ffffff"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText,SpUsage">
+
+    <android.liuwei.popupwindowdemo.core.DropdownButton
+        android:id="@+id/dropdown_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="36dp"
+        android:background="#00ff00"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="start|center_vertical"
+        android:maxLines="1"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:text="DropDownWindow"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        app:popWindowLayout="@layout/item_simple_dropdown"
+        app:popWindowLocation="bottom"
+        app:showItemCount="6.5"
+        tools:ignore="SpUsage,UnusedAttribute"
+        tools:text="DropDownWindow" />
+
+</LinearLayout>

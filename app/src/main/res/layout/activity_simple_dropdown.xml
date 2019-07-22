@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:background="#ffffff"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText,SpUsage">
+
+    <TextView
+        android:id="@+id/display_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f0f0f0"
+        android:padding="6dp"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        tools:text="Display" />
+
+    <TextView
+        android:id="@+id/window_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="#f0f0f0"
+        android:gravity="top"
+        android:lines="5"
+        android:padding="6dp"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        tools:text="WindowInfo" />
+
+    <android.liuwei.popupwindowdemo.test.LogTextView
+        android:id="@+id/show_drop_window"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="36dp"
+        android:background="#00ff00"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="start|center_vertical"
+        android:maxLines="1"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:text="DropDownWindow"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        tools:ignore="SpUsage,UnusedAttribute"
+        tools:text="DropDownWindow" />
+
+</LinearLayout>

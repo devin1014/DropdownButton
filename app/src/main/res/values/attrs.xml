@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="DropdownButton">
+        <attr name="popWindowLayout" format="reference" />
+        <attr name="popWindowLocation" format="enum">
+            <enum name="left" value="1" />
+            <enum name="top" value="2" />
+            <enum name="right" value="3" />
+            <enum name="bottom" value="4" />
+        </attr>
+        <attr name="showItemCount" format="float" />
+    </declare-styleable>
+
+</resources>
