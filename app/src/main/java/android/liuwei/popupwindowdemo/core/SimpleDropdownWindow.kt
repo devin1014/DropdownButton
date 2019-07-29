@@ -110,6 +110,9 @@ class SimpleDropdownWindow(context: Context,
                 textView.paint.getTextBounds(str, 0, str.length, rect)
                 //Log.i("testLog_$TAG", "getBounds: $str -> ${rect.width()}")
                 val w = textView.paint.measureText(str)
+                //NOTE:在这里如果取rect.width()不对，这个数据和measureText不一样（demo中mmmmmmmmmmmmm），相差5像素，导致textView显示不全！
+                //NOTE:在这里如果取rect.width()不对，这个数据和measureText不一样（demo中mmmmmmmmmmmmm），相差5像素，导致textView显示不全！
+                //NOTE:在这里如果取rect.width()不对，这个数据和measureText不一样（demo中mmmmmmmmmmmmm），相差5像素，导致textView显示不全！
                 //Log.i("testLog_$TAG", "measureText: $str -> ${textView.paint.measureText(str)}")
                 if (resetWidth && w > maxWidth) {
                     maxWidth = w.roundToInt()
